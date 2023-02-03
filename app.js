@@ -1,7 +1,7 @@
 const fs = require("fs");
-const htpp = require("htpp");
+const htpp = require("http");
 
-const server = htpp.createServer((req, res) => {
+const server = http.createServer((req, res) => {
   const url = req.url;
   switch (url) {
     case "/":
